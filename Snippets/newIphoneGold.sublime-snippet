@@ -1,0 +1,41 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+## new layer Iphone6 gray || trigger - newIphone ##
+F = Framer
+# create background
+frame = new Layer
+    image: 'images/iphone6-gold.jpg'
+    height:2060
+    width:1290
+frame.center()
+#
+screen = new Layer
+	backgroundColor: '#263238'
+	width:750
+	height:1334
+	borderRadius:4
+	clip: true
+screen.center()
+F.Defaults.Layer.parent = screen
+# screen sizes for devices
+if Utils.isDesktop()
+	screen.scale = (Screen.height / screen.height) / 2
+	frame.scale = (Screen.height / screen.height) / 2
+	window.onresize = ->
+	 	screen.scale = (Screen.height / screen.height) / 2
+	 	frame.scale = (Screen.height / screen.height) / 2
+	 	screen.center()
+	 	frame.center()
+if Utils.isMobile()
+	frame.visible = false
+	screen.scale = Screen.height / screen.outerHeight
+	window.onresize = ->
+	 	screen.scale = Screen.height / screen.outerHeight
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>newIphoneGold</tabTrigger>
+  <description>Iphone project - Gold</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

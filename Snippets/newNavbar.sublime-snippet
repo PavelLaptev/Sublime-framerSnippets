@@ -1,0 +1,35 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+## navigationbar with statusbar || trigger - newNavbar ##
+navbarContainer = new Layer
+	backgroundColor: Color.random()
+	height: 128
+	width: screen.width
+	x: Align.left
+	y: Align.top
+# statusBar
+statusbar = new Layer
+	image: 'images/iphone6-status.png'
+	width: navbarContainer.width
+	height: 40
+	x: Align.left
+	y: Align.top
+statusbar.parent = navbarContainer
+if Utils.isMobile()
+	statusbar.visible = false
+# navBar
+navbar = new Layer
+	backgroundColor: 'rgba(0,0,0,0.2)'
+	width: navbarContainer.width
+	height: 88
+	x: Align.left
+	y: 40
+navbar.parent = navbarContainer
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>newNavbar</tabTrigger>
+  <description>create navigation bar</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

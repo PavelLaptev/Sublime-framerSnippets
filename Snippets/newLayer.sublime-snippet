@@ -1,0 +1,17 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+## new layer || trigger - newLayer ##
+newLayer = new Layer
+	backgroundColor: Color.random()
+	opacity:0.5
+	width: 96
+	height: 96
+newLayer.center()
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>newLayer</tabTrigger>
+  <description>new Layer</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

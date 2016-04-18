@@ -1,0 +1,21 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+## new text layer || trigger - newText ##
+newText = new TextLayer
+    text: "The quick text"
+    color: "#aaa"
+    textAlign: "center"
+    fontSize: 48
+    width: 200
+    autoSize: true
+    fontFamily: "Arial"
+newText.center()
+
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>newText</tabTrigger>
+  <description>new text layer</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

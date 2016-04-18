@@ -1,0 +1,17 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+## tabbar || trigger - newTabbar ##
+tabbar = new Layer
+	backgroundColor: Color.random()
+	width: screen.width
+	height: 96
+	x: Align.left
+	y: Align.bottom
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>newTabbar</tabTrigger>
+  <description>crate tabbar</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

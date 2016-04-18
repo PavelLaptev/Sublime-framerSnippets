@@ -1,0 +1,14 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# drag || trigger - drag
+newLayer.draggable.enabled = true
+newLayer.draggable.vertical = false
+newLayer.draggable.constraints = newLayer
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>drag</tabTrigger>
+  <description>drag event</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee, punctuation.definition.comment.coffee</scope>
+</snippet>
