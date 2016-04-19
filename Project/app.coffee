@@ -1,12 +1,33 @@
+### SNIPPET LIST
+	clear console - ClearConsole
+	----
+	create iphone6 view SpaceGray || newIphone
+	create iphone6 view White || newIphoneWhite
+	create iphone6 view Gold || newIphoneGold
+	----
+	init text layers || initText
+	create text layer || newText
+	---
+	new layer || newLayer
+	new Circle || newCircle
+	new text layer || newText ## -> init textLayer by trigger initText before use snippet
+	tabbar || newTabbar
+	navigationbar with statusbar || newNavbar
+	---
+	drag || drag
+	add states || state
+###
+
+
 ## cleaning console || trigger - ClearConsole ##
 console.clear()
+
 
 ## init text layers || trigger - initText ##
 {TextLayer} = require 'TextLayer'
 
 
 ## new layer Iphone6 gray || trigger - newIphone ##
-F = Framer
 # create background
 frame = new Layer
     image: 'images/iphone6-white.jpg'
@@ -15,13 +36,13 @@ frame = new Layer
 frame.center()
 #
 screen = new Layer
-	backgroundColor: '#263238'
+	backgroundColor: '#F3FFBD'
 	width:750
 	height:1334
 	borderRadius:4
 	clip: true
 screen.center()
-F.Defaults.Layer.parent = screen
+Framer.Defaults.Layer.parent = screen
 # screen sizes for devices
 if Utils.isDesktop()
 	screen.scale = (Screen.height / screen.height) / 2
@@ -32,7 +53,8 @@ if Utils.isDesktop()
 	 	screen.center()
 	 	frame.center()
 if Utils.isMobile()
-	frame.visible = false
+	frame.destroy()
+	Framer.Defaults.Layer.parent = null
 	screen.scale = Screen.height / screen.outerHeight
 	window.onresize = ->
 	 	screen.scale = Screen.height / screen.outerHeight
@@ -40,27 +62,31 @@ if Utils.isMobile()
 
 ## new layer || trigger - newLayer ##
 newLayer = new Layer
-	backgroundColor: Color.random()
-	opacity:0.5
-	width: 96
-	height: 96
+	backgroundColor: '#FF1654'
+	width: 396
+	height: 396
+	borderRadius: 12
+newLayer.shadowY = 20
+newLayer.shadowBlur = 80
 newLayer.center()
 
 
 ## new Circle || trigger - newCircle ##
 newCircle = new Layer
-	backgroundColor: Color.random()
-	opacity:0.5
-	width: 96
-	height: 96
+	backgroundColor: '#FFE95A'
+	width: 200
+	height: 200
+	x: 450
+	y: 380
 	borderRadius: 10000
-newCircle.center()
+newCircle.shadowY = 10
+newCircle.shadowBlur = 20
 
 
 ## new text layer || trigger - newText ## || init textLayer by trigger initText before use snippet
 newText = new TextLayer
     text: "The quick text"
-    color: "#aaa"
+    color: "white"
     textAlign: "center"
     fontSize: 48
     width: 200
@@ -71,7 +97,7 @@ newText.center()
 
 ## tabbar || trigger - newTabbar ##
 tabbar = new Layer
-	backgroundColor: Color.random()
+	backgroundColor: '#247BA0'
 	width: screen.width
 	height: 96
 	x: Align.left
@@ -80,7 +106,7 @@ tabbar = new Layer
 
 ## navigationbar with statusbar || trigger - newNavbar ##
 navbarContainer = new Layer
-	backgroundColor: Color.random()
+	backgroundColor: '#B2DBBF'
 	height: 128
 	width: screen.width
 	x: Align.left
@@ -97,7 +123,7 @@ if Utils.isMobile()
 	statusbar.visible = false
 # navBar
 navbar = new Layer
-	backgroundColor: 'rgba(0,0,0,0.2)'
+	backgroundColor: '#70C1B3'
 	width: navbarContainer.width
 	height: 88
 	x: Align.left
