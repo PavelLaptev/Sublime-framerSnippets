@@ -6,18 +6,16 @@
 	create iphone6 view Gold || newIphoneGold
 	----
 	init text layers || initText
-	create text layer || newText
+	create text layer || newText ## -> init textLayer by trigger initText before use snippet
 	---
 	new layer || newLayer
 	new Circle || newCircle
-	new text layer || newText ## -> init textLayer by trigger initText before use snippet
 	tabbar || newTabbar
 	navigationbar with statusbar || newNavbar
 	---
 	drag || drag
 	add states || state
 ###
-
 
 ## cleaning console || trigger - ClearConsole ##
 console.clear()

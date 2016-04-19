@@ -16,7 +16,7 @@ Copy snippets from "Snippets" folder into "User" folder (path to folder User/Lib
 
 ![comand](https://dl.dropboxusercontent.com/s/ywunwra9g3v6s46/copy.jpg?dl=0)
 
-Now you can use snippets
+Now you can use snippets - just type trigger and press TAB key
 
 ![comand](https://dl.dropboxusercontent.com/s/cvfy9jf3bmm0t3m/sublime.gif?dl=0)
 
@@ -24,14 +24,32 @@ Now you can use snippets
 
 This template freandly for view on device
 
-![comand](https://dl.dropboxusercontent.com/s/eck8ul5knnxbwr8/freandly.gif?dl=0)
+![comand](https://dl.dropboxusercontent.com/s/yhnkrzhc8e6hkd2/frandly.gif?dl=0)
 
-### Create Iphone 6 view with mobile and desktop breakpoints
+## Snippets list
 
-### Text layers
+#### Create Iphone 6 view with mobile and desktop breakpoints
 
-### Events
+create iphone6 view SpaceGray || trigger - **newIphone**
+create iphone6 view White || trigger - **newIphoneWhite**
+create iphone6 view Gold || trigger - **newIphoneGold**
 
-### Bars create
+#### Text layers
 
-### Simple layers
+init text layers || trigger - **initText**
+create text layer || trigger - **newText** ## -> init textLayer by trigger initText before use snippet
+
+#### Events
+
+drag || trigger - **drag**
+add states || trigger - **state**
+
+#### Bars create
+
+tabbar || trigger - **newTabbar**
+navigationbar with statusbar || trigger - **newNavbar**
+
+#### Simple layers
+
+new layer || trigger - **newLayer**
+new Circle || trigger - **newCircle**
