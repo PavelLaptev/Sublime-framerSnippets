@@ -4,7 +4,7 @@ The project includes a framer template with [textLayer module](https://github.co
 
 ### Start
 
-For start look at the instruction ["How work in Sublime with framer.JS"](https://github.com/awt2542/textLayer-for-Framer)
+Look at the instruction ["Sublime with framer.JS"](http://codepen.io/PavelLaptev/post/sublime-with-framer-js)
 
 ### Install
 
@@ -22,9 +22,13 @@ Now you can use snippets - just type trigger and press TAB key
 
 ![comand](https://dl.dropboxusercontent.com/s/fasva6o8kqrgkrq/use.gif?dl=0)
 
-This template freandly for view on device
+Iphone template has breakpoint for view on device.
 
 ![comand](https://dl.dropboxusercontent.com/s/yhnkrzhc8e6hkd2/frandly.gif?dl=0)
+
+Use your project like webapp - add it to homescreen
+
+![comand](https://dl.dropboxusercontent.com/s/4dtfuki3qm590tg/homescreen.jpg?dl=0)
 
 ## Snippets list
 
