@@ -30,26 +30,26 @@ This template freandly for view on device
 
 #### Create Iphone 6 view with mobile and desktop breakpoints
 
-create iphone6 view SpaceGray || trigger - **newIphone**
-create iphone6 view White || trigger - **newIphoneWhite**
-create iphone6 view Gold || trigger - **newIphoneGold**
+- create iphone6 view SpaceGray || trigger - **newIphone**
+- create iphone6 view White || trigger - **newIphoneWhite**
+- create iphone6 view Gold || trigger - **newIphoneGold**
 
 #### Text layers
 
-init text layers || trigger - **initText**
-create text layer || trigger - **newText** ## -> init textLayer by trigger initText before use snippet
+- init text layers || trigger - **initText**
+- create text layer || trigger - **newText** ## -> init textLayer by trigger initText before use snippet
 
 #### Events
 
-drag || trigger - **drag**
-add states || trigger - **state**
+- drag || trigger - **drag**
+- add states || trigger - **state**
 
 #### Bars create
 
-tabbar || trigger - **newTabbar**
-navigationbar with statusbar || trigger - **newNavbar**
+- tabbar || trigger - **newTabbar**
+- navigationbar with statusbar || trigger - **newNavbar**
 
 #### Simple layers
 
-new layer || trigger - **newLayer**
-new Circle || trigger - **newCircle**
+- new layer || trigger - **newLayer**
+- new Circle || trigger - **newCircle**
