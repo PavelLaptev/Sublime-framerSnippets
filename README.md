@@ -18,9 +18,13 @@ Copy snippets from "Snippets" folder into "User" folder (path to folder User/Lib
 
 Now you can use snippets
 
+![comand](https://dl.dropboxusercontent.com/s/cvfy9jf3bmm0t3m/sublime.gif?dl=0)
+
 ![comand](https://dl.dropboxusercontent.com/s/fasva6o8kqrgkrq/use.gif?dl=0)
 
-![comand](https://dl.dropboxusercontent.com/s/cvfy9jf3bmm0t3m/sublime.gif?dl=0)
+This template freandly for view on device
+
+![comand](https://dl.dropboxusercontent.com/s/eck8ul5knnxbwr8/freandly.gif?dl=0)
 
 ### Create Iphone 6 view with mobile and desktop breakpoints
 
