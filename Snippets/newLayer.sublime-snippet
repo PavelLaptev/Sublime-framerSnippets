@@ -3,10 +3,12 @@
   <content><![CDATA[
 ## new layer || trigger - newLayer ##
 newLayer = new Layer
-	backgroundColor: Color.random()
-	opacity:0.5
-	width: 96
-	height: 96
+  backgroundColor: '#FF1654'
+  width: 396
+  height: 396
+  borderRadius: 12
+newLayer.shadowY = 20
+newLayer.shadowBlur = 80
 newLayer.center()
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

@@ -4,7 +4,7 @@
 ## new text layer || trigger - newText ##
 newText = new TextLayer
     text: "The quick text"
-    color: "#aaa"
+    color: "white"
     textAlign: "center"
     fontSize: 48
     width: 200

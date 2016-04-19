@@ -3,11 +3,11 @@
   <content><![CDATA[
 ## tabbar || trigger - newTabbar ##
 tabbar = new Layer
-	backgroundColor: Color.random()
-	width: screen.width
-	height: 96
-	x: Align.left
-	y: Align.bottom
+  backgroundColor: '#247BA0'
+  width: screen.width
+  height: 96
+  x: Align.left
+  y: Align.bottom
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>newTabbar</tabTrigger>

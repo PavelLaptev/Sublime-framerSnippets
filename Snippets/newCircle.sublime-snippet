@@ -3,12 +3,14 @@
   <content><![CDATA[
 ## new Circle || trigger - newCircle ##
 newCircle = new Layer
-	backgroundColor: Color.random()
-	opacity:0.5
-	width: 96
-	height: 96
-	borderRadius: 10000
-newCircle.center()
+  backgroundColor: '#FFE95A'
+  width: 200
+  height: 200
+  x: 450
+  y: 380
+  borderRadius: 10000
+newCircle.shadowY = 10
+newCircle.shadowBlur = 20
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>newCircle</tabTrigger>

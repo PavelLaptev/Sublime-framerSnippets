@@ -3,7 +3,7 @@
   <content><![CDATA[
 ## navigationbar with statusbar || trigger - newNavbar ##
 navbarContainer = new Layer
-	backgroundColor: Color.random()
+	backgroundColor: '#B2DBBF'
 	height: 128
 	width: screen.width
 	x: Align.left
@@ -20,7 +20,7 @@ if Utils.isMobile()
 	statusbar.visible = false
 # navBar
 navbar = new Layer
-	backgroundColor: 'rgba(0,0,0,0.2)'
+	backgroundColor: '#70C1B3'
 	width: navbarContainer.width
 	height: 88
 	x: Align.left

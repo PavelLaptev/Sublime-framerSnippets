@@ -12,6 +12,13 @@ Open packeges folder from sublime Command Palette Cmd+Shift+p
 
 ![comand](https://dl.dropboxusercontent.com/s/qunp2q9yn2shlka/browse.jpg?dl=0)
 
+Copy snippets from "Snippets" folder into "User" folder (path to folder User/Library/Application Support/Sublime Text 3/Packages/User/)
+
+![comand](https://www.dropbox.com/s/ywunwra9g3v6s46/copy.jpg?dl=0)
+
+Now you can use snippets
+
+![comand](https://www.dropbox.com/s/fasva6o8kqrgkrq/use.gif?dl=0)
 
 ### Create Iphone 6 view with mobile and desktop breakpoints
 

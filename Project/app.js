@@ -20,16 +20,14 @@
  */
 
 (function() {
-  var F, TextLayer, frame, navbar, navbarContainer, newLayer, screen, statusbar, tabbar;
+  var TextLayer, frame, navbar, navbarContainer, newCircle, newLayer, newText, screen, statusbar, tabbar;
 
   console.clear();
 
   TextLayer = require('TextLayer').TextLayer;
 
-  F = Framer;
-
   frame = new Layer({
-    image: 'images/iphone6-gray.jpg',
+    image: 'images/iphone6-white.jpg',
     height: 2060,
     width: 1290
   });
@@ -68,6 +66,52 @@
     };
   }
 
+  newLayer = new Layer({
+    backgroundColor: '#FF1654',
+    width: 396,
+    height: 396,
+    borderRadius: 12
+  });
+
+  newLayer.shadowY = 20;
+
+  newLayer.shadowBlur = 80;
+
+  newLayer.center();
+
+  newCircle = new Layer({
+    backgroundColor: '#FFE95A',
+    width: 200,
+    height: 200,
+    x: 450,
+    y: 380,
+    borderRadius: 10000
+  });
+
+  newCircle.shadowY = 10;
+
+  newCircle.shadowBlur = 20;
+
+  newText = new TextLayer({
+    text: "The quick text",
+    color: "white",
+    textAlign: "center",
+    fontSize: 48,
+    width: 200,
+    autoSize: true,
+    fontFamily: "Arial"
+  });
+
+  newText.center();
+
+  tabbar = new Layer({
+    backgroundColor: '#247BA0',
+    width: screen.width,
+    height: 96,
+    x: Align.left,
+    y: Align.bottom
+  });
+
   navbarContainer = new Layer({
     backgroundColor: '#B2DBBF',
     height: 128,
@@ -100,31 +144,22 @@
 
   navbar.parent = navbarContainer;
 
-  tabbar = new Layer({
-    backgroundColor: '#247BA0',
-    width: screen.width,
-    height: 96,
-    x: Align.left,
-    y: Align.bottom
-  });
-
-  newLayer = new Layer({
-    backgroundColor: '#FF1654',
-    width: 396,
-    height: 796,
-    borderRadius: 1002
-  });
-
-  newLayer.shadowY = 20;
-
-  newLayer.shadowBlur = 80;
-
-  newLayer.center();
-
   newLayer.draggable.enabled = true;
 
   newLayer.draggable.vertical = false;
 
   newLayer.draggable.constraints = newLayer;
+
+  newLayer.states.add({
+    StateA: {
+      x: 100,
+      y: 100
+    }
+  });
+
+  newLayer.states.animationOptions = {
+    curve: "spring(300, 0, 20)",
+    time: .2
+  };
 
 }).call(this);

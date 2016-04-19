@@ -11,13 +11,13 @@ frame = new Layer
 frame.center()
 #
 screen = new Layer
-	backgroundColor: '#263238'
+	backgroundColor: '#F3FFBD'
 	width:750
 	height:1334
 	borderRadius:4
 	clip: true
 screen.center()
-F.Defaults.Layer.parent = screen
+Framer.Defaults.Layer.parent = screen
 # screen sizes for devices
 if Utils.isDesktop()
 	screen.scale = (Screen.height / screen.height) / 2
@@ -28,7 +28,8 @@ if Utils.isDesktop()
 	 	screen.center()
 	 	frame.center()
 if Utils.isMobile()
-	frame.visible = false
+	frame.destroy()
+	Framer.Defaults.Layer.parent = null
 	screen.scale = Screen.height / screen.outerHeight
 	window.onresize = ->
 	 	screen.scale = Screen.height / screen.outerHeight

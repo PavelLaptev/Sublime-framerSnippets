@@ -28,10 +28,9 @@ console.clear()
 
 
 ## new layer Iphone6 gray || trigger - newIphone ##
-F = Framer
 # create background
 frame = new Layer
-    image: 'images/iphone6-gray.jpg'
+    image: 'images/iphone6-white.jpg'
     height:2060
     width:1290
 frame.center()
@@ -60,6 +59,51 @@ if Utils.isMobile()
 	window.onresize = ->
 	 	screen.scale = Screen.height / screen.outerHeight
 
+
+## new layer || trigger - newLayer ##
+newLayer = new Layer
+	backgroundColor: '#FF1654'
+	width: 396
+	height: 396
+	borderRadius: 12
+newLayer.shadowY = 20
+newLayer.shadowBlur = 80
+newLayer.center()
+
+
+## new Circle || trigger - newCircle ##
+newCircle = new Layer
+	backgroundColor: '#FFE95A'
+	width: 200
+	height: 200
+	x: 450
+	y: 380
+	borderRadius: 10000
+newCircle.shadowY = 10
+newCircle.shadowBlur = 20
+
+
+## new text layer || trigger - newText ## || init textLayer by trigger initText before use snippet
+newText = new TextLayer
+    text: "The quick text"
+    color: "white"
+    textAlign: "center"
+    fontSize: 48
+    width: 200
+    autoSize: true
+    fontFamily: "Arial"
+newText.center()
+
+
+## tabbar || trigger - newTabbar ##
+tabbar = new Layer
+	backgroundColor: '#247BA0'
+	width: screen.width
+	height: 96
+	x: Align.left
+	y: Align.bottom
+
+
 ## navigationbar with statusbar || trigger - newNavbar ##
 navbarContainer = new Layer
 	backgroundColor: '#B2DBBF'
@@ -87,41 +131,15 @@ navbar = new Layer
 navbar.parent = navbarContainer
 
 
-## tabbar || trigger - newTabbar ##
-tabbar = new Layer
-  backgroundColor: '#247BA0'
-  width: screen.width
-  height: 96
-  x: Align.left
-  y: Align.bottom
-
-## new layer || trigger - newLayer ##
-newLayer = new Layer
-  backgroundColor: '#FF1654'
-  width: 396
-  height: 796
-  borderRadius: 1002
-newLayer.shadowY = 20
-newLayer.shadowBlur = 80
-newLayer.center()
+#### EVENTS ####
 
 # drag || trigger - drag
 newLayer.draggable.enabled = true
 newLayer.draggable.vertical = false
 newLayer.draggable.constraints = newLayer
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# add states || trigger - state
+newLayer.states.add
+	StateA: x: 100, y: 100
+newLayer.states.animationOptions = curve: "spring(300, 0, 20)", time: .2
 
