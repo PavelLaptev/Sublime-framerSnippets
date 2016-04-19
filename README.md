@@ -20,6 +20,8 @@ Now you can use snippets
 
 ![comand](https://dl.dropboxusercontent.com/s/fasva6o8kqrgkrq/use.gif?dl=0)
 
+![comand](https://dl.dropboxusercontent.com/s/cvfy9jf3bmm0t3m/sublime.gif?dl=0)
+
 ### Create Iphone 6 view with mobile and desktop breakpoints
 
 ### Text layers
