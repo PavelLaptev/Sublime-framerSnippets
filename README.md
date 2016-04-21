@@ -50,7 +50,7 @@ Use your project like webapp - add it to homescreen
 - tap || trigger - **tap**
 - double tap || trigger - **2tap**
 - swipe || trigger - **swipe**
-- states || trigger - **trigger - **state**
+- states || trigger - **state**
 
 #### Bars create
 
