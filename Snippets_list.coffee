@@ -1,3 +1,33 @@
+### SNIPPET LIST
+	clear console - ClearConsole
+	----
+	create iphone6 view SpaceGray || newIphone
+	create iphone6 view White || newIphoneWhite
+	create iphone6 view Gold || newIphoneGold
+	----
+	init text layers || initText
+	create text layer || newText ## -> init textLayer by trigger initText before use snippet
+	---
+	new layer || newLayer
+	new Circle || newCircle
+	tabbar || newTabbar
+	navigationbar with statusbar || newNavbar
+	---
+	drag || drag
+	add states || state
+	add click || click
+	add tap || tap
+	add double tap || 2tap
+	add swipe || swipe
+	---
+	create new animation || newAnim
+	create new reverse animation || newAnimRev
+	---
+	create spring || spring
+	create bezier || bez
+	create ease || ease
+###
+
 ## cleaning console || trigger - ClearConsole ##
 console.clear()
 
@@ -121,3 +151,61 @@ newLayer.draggable.constraints = newLayer
 newLayer.states.add
 	StateA: x: 100, y: 100
 newLayer.states.animationOptions = curve: "spring(300, 0, 20)", time: .2
+
+# add click || trigger - click
+newLayer.on Events.Click, () ->
+    console.log("Works!", event)
+
+# add tap || trigger - tap
+newLayer.on Events.Tap, () ->
+    console.log("Works!", event)
+
+# add double tap || trigger - 2tap
+newLayer.on Events.Tap, () ->
+    console.log("Works!", event)
+
+# add swipe || trigger - swipe
+newLayer.on Events.Swipe, () ->
+    console.log("Works!", event)
+
+
+#### ANIMATION ####
+
+# create new animation || trigger - newAnim
+newAnimation = new Animation
+    layer: newLayer
+    properties:
+        x: 100
+	    curve: 'ease'
+	    time: 0.2
+	    repeat: 5
+	    delay: 0.5
+newAnimation.start()
+
+# create new reverse animation || trigger - newAnimRev
+animationA = new Animation
+    layer: newLayer
+    properties:
+        x: 100
+	    curve: 'ease'
+	    time: 0.2
+	    repeat: 5
+	    delay: 0.5
+
+animationB = animationA.reverse()
+animationA.on(Events.AnimationEnd, animationB.start)
+
+animationA.start()
+
+
+#### EASE ####
+
+# create spring || trigger - spring
+curve: "spring(400, 30, 0)"
+
+# create bezier || trigger - bez
+curve: "bezier-curve(0.25, 0.1, 0.25, 1)"
+
+# create ease || trigger - ease
+curve: "ease-in-out"
+

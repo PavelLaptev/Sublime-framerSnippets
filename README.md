@@ -34,9 +34,9 @@ Use your project like webapp - add it to homescreen
 
 #### Create Iphone 6 view with mobile and desktop breakpoints
 
-- create iphone6 view SpaceGray || trigger - **newIphone**
-- create iphone6 view White || trigger - **newIphoneWhite**
-- create iphone6 view Gold || trigger - **newIphoneGold**
+- iphone6 view SpaceGray || trigger - **newIphone**
+- iphone6 view White || trigger - **newIphoneWhite**
+- iphone6 view Gold || trigger - **newIphoneGold**
 
 #### Text layers
 
@@ -46,7 +46,11 @@ Use your project like webapp - add it to homescreen
 #### Events
 
 - drag || trigger - **drag**
-- add states || trigger - **state**
+- click || trigger - **click**
+- tap || trigger - **tap**
+- double tap || trigger - **2tap**
+- swipe || trigger - **swipe**
+- states || trigger - **trigger - **state**
 
 #### Bars create
 
@@ -57,3 +61,14 @@ Use your project like webapp - add it to homescreen
 
 - new layer || trigger - **newLayer**
 - new Circle || trigger - **newCircle**
+
+#### Animations
+
+- create new animation || trigger - **newAnim**
+- create new reverse animation || trigger - **newAnimRev**
+
+#### Ease
+
+- create spring || trigger - **spring**
+- create bezier || trigger - **bez**
+- create ease || trigger - **ease**

@@ -1,23 +1,3 @@
-
-/* SNIPPET LIST
-	clear console - ClearConsole
-	----
-	create iphone6 view SpaceGray || newIphone
-	create iphone6 view White || newIphoneWhite
-	create iphone6 view Gold || newIphoneGold
-	----
-	init text layers || initText
-	create text layer || newText ## -> init textLayer by trigger initText before use snippet
-	---
-	new layer || newLayer
-	new Circle || newCircle
-	tabbar || newTabbar
-	navigationbar with statusbar || newNavbar
-	---
-	drag || drag
-	add states || state
- */
-
 (function() {
   var TextLayer, frame, navbar, navbarContainer, newCircle, newLayer, newText, screen, statusbar, tabbar;
 

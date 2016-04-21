@@ -1,0 +1,11 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+curve: "spring(400, 30, 0)"
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>spring</tabTrigger>
+  <description>create spring ease</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

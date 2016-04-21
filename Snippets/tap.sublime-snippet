@@ -1,0 +1,13 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# add tap || trigger - tap
+newLayer.on Events.Tap, () ->
+    console.log("Works!", event)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>tap</tabTrigger>
+  <description>add tap event</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>

@@ -1,0 +1,20 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+# create new animation || trigger - newAnim
+newAnimation = new Animation
+    layer: newLayer
+    properties:
+        x: 100
+	    curve: 'ease'
+	    time: 0.2
+	    repeat: 5
+	    delay: 0.5
+newAnimation.start()
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>newAnim</tabTrigger>
+  <description>create new animation</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.coffee.angular, comment.line.number-sign.coffee</scope>
+</snippet>
